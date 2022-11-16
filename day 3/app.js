@@ -210,8 +210,7 @@
 //level 3
 
 //no.1
-// let time = new Date(),
-//     timeInYear = time.getFullYear(),
+ //     timeInYear = time.getFullYear(),
 //     timeInMonth = time.getMonth(),
 //     timeInDay = time.getDate(),
 //     timeInHour = 1,

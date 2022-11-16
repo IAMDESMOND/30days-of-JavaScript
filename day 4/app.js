@@ -1,91 +1,195 @@
-// let word = 'javascript';
+//Day 3 :level 1
 
-// word[0] = 'Y'
+//no.1
+// let yourAge = Number(prompt('Enter your age.'));
 
+// if (yourAge > 18) {
+//     console.log('you are old enough to drive')
+// } else {
+//     console.log(`you are left with ${18 - yourAge} years to drive.`)
+// };
 
-// console.log(word);
-
-// let numOne = 3
-// let numTwo = 3
-
-// console.log(numOne == numTwo)
-
-// let js = 'JavaScript'
-// let py = 'JavaScript'
-
-// console.log(js == py)   
-
-// let lightOn = false
-// let lightOff = false
-
-// console.log(lightOn == lightOff)
-
-// // let nums = [1, 2, 3]
-// // let numbers = [1, 2, 3]
+//no.2
+// let yourAge = Number(prompt('Enter your age.'));
+// let myAge = 16;
 
 
-// console.log(nums == numbers);
+// if (yourAge > myAge) {
+//     console.log(`You are ${yourAge - myAge} years older than me`)
+// } else {
+//     console.log(`I am ${myAge - yourAge} years older than you`)
+// };
 
-// let userOne = {
-//     name:'Asabeneh',
-//     role:'teaching',
-//     country:'Finland'
-//     }
+//no.3
+// let a = 4
+// let b = 3
+
+// if (a > b) {
+//     console.log(`${a} is greater than ${b}`);
+// } else {
+//     console.log(`${b} is greater than ${a}`);
+// };
+
+// a > b 
+//    ? console.log(`${a} is greater than ${b}`)
+//    : console.log(`${b} is greater than ${a}`);
     
-// let userTwo = {
-//     name:'Asabeneh',
-//     role:'teaching',
-//     country:'Finland'
-//     }
+//no.4
 
-//     console.log(userOne == userTwo)
+// let num = Number(prompt('Enter number'))
+// let test = num % 2
 
-// let nums = [1, 2, 3]
-// let numbers =  nums
+// if (test = 0) {
+//     console.log(`${num} is an even number`);
+// } else {
+//     console.log(`${num} is a odd number`); 
+// };
 
-// console.log(nums == numbers)
+//level 2
 
-// let age = 35
-// const gravity = 9.81  // we use const for non-changing values, gravitational constant in  m/s2
-// let mass = 72         // mass in Kilogram
-// const PI = 3.14       // pi a geometrical constant
+//no.1
+// let num = Math.floor(Math.random() * 101)
 
-// // More Examples
-// const boilingPoint = 100 // temperature in oC, boiling point of water which is a constant
-// const bodyTemp = 37      // oC average human body temperature, which is a constant
+// switch (true) {
+//     case num < 50:
+//         console.log(`${num}: F`)
+//         break;
+//     case num < 60 && num > 49:
+//         console.log(`${num}: D`)
+//         break;
+//     case num < 70 && num > 59:
+//         console.log(`${num}: C`)
+//         break;
+//     case num < 80 && num > 69:
+//         console.log(`${num}: B`)
+//         break;                 
+//     case num < 101 && num > 79:
+//         console.log(`${num}: A`)
+//         break;
+//     default:
+//        console.log('not a number')
+//         break;
+// }
 
-// console.log(age, gravity, mass, PI, boilingPoint, bodyTemp)
+//no.2
+// let monthUserInput =  prompt('Enter month');
+// let month = monthUserInput.toLowerCase();
 
-// const PI = Math.PI
+// switch (month) {
+//     case 'january':
+//         console.log('Season is winter')
+//         break;
+//     case 'february':
+//         console.log('Season is winter')
+//         break;
+//     case 'march':
+//         console.log('Season is spring')
+//         break;
+//     case 'april':
+//         console.log('Season is spring')
+//         break;
+//     case 'may':
+//         console.log('Season is spring')
+//         break;
+//     case 'june':
+//         console.log('Season is summer')
+//         break;
+//     case 'july':
+//         console.log('Season is summer')
+//         break;                             
+//     case 'august':
+//         console.log('Season is summer')
+//         break;
+//     case 'september':
+//         console.log('Season is autumn')
+//         break; 
+//     case 'october':
+//         console.log('Season is autumn')
+//         break;
+//     case 'november':
+//         console.log('Season is autumn')
+//         break;
+//     case month == 'december':
+//         console.log('Season is winter')
+//         break;                
+//     default:
+//         console.log('not a month')
+//         break;
+// }
 
-// console.log(PI)
+//no.3
+// let dayUserInput = prompt('What day is today ?')
+// let day = dayUserInput.toLowerCase()
 
-// console.log(Math.round(PI))
-// console.log(Math.round(9.81))  
-// console.log(Math.floor(PI))
-// console.log(Math.floor(9.81))   
-// console.log(Math.ceil(PI))
+// switch (day) {
+//   case 'monday':
+//     console.log('Monday is working day')
+//     break
+//   case 'tuesday':
+//     console.log('Tuesday is working day')
+//     break
+//   case 'wednesday':
+//     console.log('Wednesday is working day')
+//     break
+//   case 'thursday':
+//     console.log('Thursday is working day')
+//     break
+//   case 'friday':
+//     console.log('Friday is working day')
+//     break
+//   case 'saturday':
+//     console.log('Saturday is weekend')
+//     break
+//   case 'sunday':
+//     console.log('Sunday is weekend')
+//     break
+//   default:
+//     console.log('It is not a week day.')
+// }
 
-// const randNum = Math.random() 
-// console.log(randNum)
+//level 3
 
-// const num = Math.ceil(Math.random () * 0)// number between 0 and 20
-
-// console.log(num)
-
-// console.log(Math.sqrt(25))
-
-// console.log('I hope everyone is enjoying\t the 30 Days Of JavaScript challenge.\nDo you ?') 
-
-// //Syntax
-// `String literal text ${expression}`
-
-let string = 'JavaScript'
-
-console.log(string.substring(7))       // Script
-
-// let country = 'Finland'
-
-// console.log(country.substring(0, 3))   // Fin
-// console.log(country.substring(3, 7))   // land
-// console.log(country.substring(3))      // land
+//no.1
+//  let monthUserInput =  prompt('Enter month');
+//  let month = monthUserInput.toLowerCase();
+//  switch (month) {
+//      case 'january':
+//          console.log('january has 31 days')
+//          break;
+//      case 'february':
+//          console.log('february has 28 days, and 29 on leap years')
+//          break;
+//      case 'march':
+//          console.log('march has 30 days')
+//          break;
+//      case 'april':
+//          console.log('april has 31 days')
+//          break;
+//      case 'may':
+//          console.log('may has 30 days')
+//          break;
+//      case 'june':
+//          console.log('june has 31 days')
+//          break;
+//      case 'july':
+//          console.log('july has 30 days')
+//          break;                             
+//      case 'august':
+//          console.log('august has 31 days')
+//          break;
+//      case 'september':
+//          console.log('september has 30 days')
+//          break; 
+//      case 'october':
+//          console.log('october has 31 days')
+//          break;
+//      case 'november':
+//          console.log('november has 30 days')
+//          break;
+//      case 'december':
+//          console.log('december has 31 days')
+//          break;                
+//      default:
+//          console.log('not a month')
+//          break;
+//  }
