@@ -1,3 +1,4 @@
+
 //  const countries = [
 //     'Albania',
 //     'Bolivia',
@@ -34,7 +35,7 @@
 
 //  const mixedArrayTypes = [2, 3, 'hello', true, false, null];
 
-  const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+  // const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 
 //  console.log(itCompanies);
 
@@ -139,7 +140,7 @@
 // console.log(words)
 // console.log(words.length)
 
-const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
 
 // shoppingCart.unshift('Meat')
 // shoppingCart.push('Sugar')
@@ -150,6 +151,53 @@ const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
 // shoppingCart.splice(shoppingCart.indexOf('Tea'), 1, 'Green Tea');
 // console.log(shoppingCart);
 
-if (countries.includes('Ethiopia')) {
-  console.log('ETHIOPIA');  
-};
+// if (countries.includes('Ethiopia')) {
+//   console.log('ETHIOPIA');  
+// };
+
+
+// if (webTechs.includes('Sass')) {
+//   console.log('Sass is a CSS preprocess');
+// } else{
+//  webTechs.push('Sass');
+//  console.log(webTechs);
+// };
+
+// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+// const backEnd = ['Node','Express', 'MongoDB']
+// const fullStack = [frontEnd, backEnd]
+// console.log(fullStack)
+
+// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+// ages.sort();
+// console.log(ages);
+// console.log(`Min: ${ages[0]} \nMax: ${ages[ages.length -1]}`);
+
+// let median;
+// if (ages.length % 2 == 0) {
+//   median = (ages[Math.floor(ages.length / 2)] + ages[Math.ceil(ages.length / 2)]) /2;
+//   console.log('median:', median);
+// } else {
+//   median = Math.floor(ages.length / 2)
+//   console.log('median:', ages[median]);
+// };
+
+// let average = (ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + ages[6] + ages[7]) / 2;
+// console.log('average:', average);
+
+// let range = ages[ages.length - 1] - ages[0];
+// console.log(range);
+// console.log(countries);
+// // console.log(countries.splice(0, 10));
+
+// if (countries.length % 2 == 0) {
+//  console.log(countries[Math.floor(countries.length / 2)], countries[Math.ceil(countries.length / 2)])
+// } else {
+//   median = Math.floor(countries.length / 2)
+//   console.log(median, countries.length);
+//   console.log('median:', countries[median]);
+// };
+
+// let firstHalfOfCountries = countries.slice(0, median);
+// let secondHalfOfCountries = countries.slice(median)
+// console.log(firstHalfOfCountries, secondHalfOfCountries);
