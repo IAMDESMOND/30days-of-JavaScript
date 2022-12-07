@@ -79,8 +79,63 @@
     
 // }
 
-let sum = 0;
-for (let i = 0; i <= 100; i++) {
-    sum += i;
-}
-console.log(sum)
+// let sum = 0;
+// for (let i = 0; i <= 100; i++) {
+//     sum += i;
+// }
+// console.log(sum)
+
+// let sumOfEven = 0;
+// let sumOfOdd = 0;
+// const arr = []
+
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 2 == 0) {
+//         sumOfEven += i;
+//     }else{
+//         sumOfOdd += i;
+//     }
+// }
+
+// console.log(`The sum of all evens from 0 to 100 is ${sumOfEven}. And the sum of all odds from 0 to 100 is ${sumOfOdd}.`);
+
+// arr.push(sumOfEven, sumOfOdd);
+// console.log(arr);
+
+// const arr = [];
+
+// for (let i = 0; i < 5; i++) {
+//     let num = Math.floor(Math.random() * 100);
+//     arr.push(num);
+// }
+
+// console.log(arr);
+
+
+// const alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+// let id = Array(6)
+
+// for (let i = 0; i < 6; i++) {
+//     let letter =  alpha[Math.floor(Math.random() * 26)].toLowerCase()
+//     let num = Math.floor(Math.random() * 10)
+//     let idCharacter = [letter, num]
+
+//     id[i] = idCharacter[Math.floor(Math.random() * 2)]
+// } 
+
+// console.log(id.join(''));
+
+const alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+let id = Array(Math.floor(Math.random() * 20))
+
+for (let i = 0; i <= id.length; i++) {
+    let letter =  alpha[Math.floor(Math.random() * 26)].toLowerCase()
+    let num = Math.floor(Math.random() * 10)
+    let idCharacter = [letter, num]
+
+    id[i] = idCharacter[Math.floor(Math.random() * 2)]
+} 
+
+console.log(id.join(''));
