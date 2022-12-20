@@ -167,59 +167,101 @@ for (let i = 0; i < 3; i++) {
 let rgbColor = `rgb(${arrNum.join()})`
 console.log(rgbColor)*/
 
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
+// const countries = [
+//   'Albania',
+//   'Bolivia',
+//   'Canada',
+//   'Denmark',
+//   'Ethiopia',
+//   'Finland',
+//   'Germany',
+//   'Hungary',
+//   'Ireland',
+//   'Japan',
+//   'Kenya'
+// ]
 
+// const newArr = []
+// const countryLength = []
+// const countryAbbr = []
+// const arrOfArray = []
+// const landCountries = []
+// const iaLands = []
+
+
+// for (const country of countries) {
+//         newArr.push(country.toUpperCase())
+// 	countryLength.push(country.length)
+// 	countryAbbr.push(country.slice(0, 3).toUpperCase())
+// 	arrOfArray.push([country.toUpperCase(), country.slice(0, 3).toUpperCase(), country.length])
+//   if (country.match('land')) {
+//     landCountries.push(country)
+//   }
+//   if (country.match('ia')) {
+//     iaLands.push(country)
+//   }
+// }
+
+
+// console.log(newArr)
+// console.log(countryLength)
+// console.log(countryAbbr)
+// console.log(arrOfArray)
+
+// if (landCountries.length > 0) {
+//   console.log(landCountries)
+// }else{
+//   console.log('All these countries are without land');
+// }
+
+// if (iaLands.length > 0) {
+//   console.log(iaLands)
+// }else{
+//   console.log('All these countries are without iaLands')
+// }
+
+//do that highest length code ooo here no forget
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
 const newArr = []
-const countryLength = []
-const countryAbbr = []
-const arrOfArray = []
-const landCountries = []
-const iaLands = []
 
-for (const country of countries) {
-        newArr.push(country.toUpperCase())
-	countryLength.push(country.length)
-	countryAbbr.push(country.slice(0, 3).toUpperCase())
-	arrOfArray.push([country.toUpperCase(), country.slice(0, 3).toUpperCase(), country.length])
-  if (country.match('land')) {
-    landCountries.push(country)
-  }
-  if (country.match('ia')) {
-    iaLands.push(country)
-  }
+
+for (const webTech of webTechs) {
+  newArr.push([webTech, webTech.length])
+  console.log(webTech)
+}
+newArr
+
+const mernStack = [
+  'MongoDB',
+  'Express',
+  'React', 
+  'Node'
+];
+
+const firstLetterArr = []
+
+
+for (const mern of mernStack) {
+  firstLetterArr.push(mern.charAt(0))
 }
 
+firstLetterArr
 
-console.log(newArr)
-console.log(countryLength)
-console.log(countryAbbr)
-console.log(arrOfArray)
+let acronym = firstLetterArr.join('')
+console.log(acronym)
 
-if (landCountries.length > 0) {
-  console.log(landCountries)
-}else{
-  console.log('All these countries are without land');
-}
-
-if (iaLands.length > 0) {
-  console.log(iaLands)
-}else{
-  console.log('All these countries are without iaLands')
-}
-
-
-
-
-
+const fruits = [
+ 'banana',
+ 'orange',
+ 'mango',
+ 'lemon'
+]
