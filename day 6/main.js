@@ -126,16 +126,100 @@
 
 // console.log(id.join(''));
 
-const alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+/* const alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-let id = Array(Math.floor(Math.random() * 20))
+let id = Array(Math.floor(Math.random() * 20 + 5))
 
-for (let i = 0; i <= id.length; i++) {
-    let letter =  alpha[Math.floor(Math.random() * 26)].toLowerCase()
-    let num = Math.floor(Math.random() * 10)
-    let idCharacter = [letter, num]
+for (let i = 0; i < id.length; i++) {
+    	let letter =  alpha[Math.floor(Math.random() * 26)].toLowerCase()
+    	let num = Math.floor(Math.random() * 10)
+    	let idCharacter = [letter, num]
 
     id[i] = idCharacter[Math.floor(Math.random() * 2)]
 } 
 
-console.log(id.join(''));
+console.log(id.join(''));*/
+
+/*const alpha = ["A","B","C","D","E","F"];
+
+ let id = Array(6)
+ id[0] = '#'
+
+for (let i = 1; i < 6; i++) {
+     let letter =  alpha[Math.floor(Math.random() * 6)].toLowerCase()
+     let num = Math.floor(Math.random() * 10)
+     let idCharacter = [letter, num]
+
+     id[i] = idCharacter[Math.floor(Math.random() * 2)]
+ } 
+
+
+console.log(id.join(''));*/
+
+/*let arrNum = Array(3)
+
+for (let i = 0; i < 3; i++) {
+     let num = Math.floor(Math.random() * 256);
+
+     arrNum[i] = num
+ } 
+
+let rgbColor = `rgb(${arrNum.join()})`
+console.log(rgbColor)*/
+
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
+const newArr = []
+const countryLength = []
+const countryAbbr = []
+const arrOfArray = []
+const landCountries = []
+const iaLands = []
+
+for (const country of countries) {
+        newArr.push(country.toUpperCase())
+	countryLength.push(country.length)
+	countryAbbr.push(country.slice(0, 3).toUpperCase())
+	arrOfArray.push([country.toUpperCase(), country.slice(0, 3).toUpperCase(), country.length])
+  if (country.match('land')) {
+    landCountries.push(country)
+  }
+  if (country.match('ia')) {
+    iaLands.push(country)
+  }
+}
+
+
+console.log(newArr)
+console.log(countryLength)
+console.log(countryAbbr)
+console.log(arrOfArray)
+
+if (landCountries.length > 0) {
+  console.log(landCountries)
+}else{
+  console.log('All these countries are without land');
+}
+
+if (iaLands.length > 0) {
+  console.log(iaLands)
+}else{
+  console.log('All these countries are without iaLands')
+}
+
+
+
+
+
