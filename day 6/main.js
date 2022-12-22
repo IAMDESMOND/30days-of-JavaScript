@@ -220,7 +220,15 @@ console.log(rgbColor)*/
 //   console.log('All these countries are without iaLands')
 // }
 
-//do that highest length code ooo here no forget
+// let highest = countries[0];
+
+// for (let i = 1; i < countries.length; i++) {
+//   if (highest.length < countries[i].length) {
+//     highest = countries[i];
+//   }
+// }
+
+// console.log(highest);
 
 const webTechs = [
   'HTML',
@@ -231,14 +239,14 @@ const webTechs = [
   'Node',
   'MongoDB'
 ];
-const newArr = []
+// const newArr = []
 
 
-for (const webTech of webTechs) {
-  newArr.push([webTech, webTech.length])
-  console.log(webTech)
-}
-newArr
+// for (const webTech of webTechs) {
+//   newArr.push([webTech, webTech.length])
+//   console.log(webTech)
+// }
+// newArr
 
 const mernStack = [
   'MongoDB',
@@ -247,21 +255,95 @@ const mernStack = [
   'Node'
 ];
 
-const firstLetterArr = []
+// const firstLetterArr = []
 
 
-for (const mern of mernStack) {
-  firstLetterArr.push(mern.charAt(0))
+// for (const mern of mernStack) {
+//   firstLetterArr.push(mern.charAt(0))
+// }
+
+// firstLetterArr
+
+// let acronym = firstLetterArr.join('')
+// console.log(acronym)
+
+// const techs= ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+
+// for (const tech of techs) {
+//   console.log(tech);
+// }
+
+// const fruits = [
+//  'banana',
+//  'orange',
+//  'mango',
+//  'lemon'
+// ]
+
+// const newFruit = []
+
+// for (let i = fruits.length -1; i > -1; i--) {
+//     console.log(i);
+//     newFruit.push(fruits[i])
+// }
+
+// console.log(newFruit)
+
+// const fullStack = [
+//     ['HTML', 'CSS', 'JS', 'React'],
+//     ['Node', 'Express', 'MongoDB']
+//   ];
+
+// for (let i = 0; i < fullStack.length; i++) {
+//     for (let k = 0; k < fullStack[i].length; k++) {
+//         console.log(fullStack[i][k])        
+//     }    
+// }
+
+
+console.log(countries);
+const copyCountries = [];
+const lengthFour = [];
+let highest = countries[0] ;
+const landCountry = []
+const twoWord = []
+
+for (const country of countries) {
+  copyCountries.push(country)
+  if (highest.length < country.length) {
+    highest = country
+  }
+if (country.match('land')) {
+  landCountry.push(country)
+}
+if (country.match(' ')) {
+  twoWord.push(country)
+}
+  if(country.length == 4){
+    lengthFour.push(country)
+  }
 }
 
-firstLetterArr
+console.log(lengthFour);
 
-let acronym = firstLetterArr.join('')
-console.log(acronym)
+console.log(copyCountries);
 
-const fruits = [
- 'banana',
- 'orange',
- 'mango',
- 'lemon'
-]
+const sortedCountries = copyCountries.sort();
+
+console.log(sortedCountries);
+
+const sortedMernStack = mernStack.sort();
+const sortedWebTechs = webTechs.sort();
+
+console.log(sortedMernStack, sortedWebTechs);
+
+const newCountry = []
+
+for (let i = countries.length -1; i > -1; i--) {
+    newCountry.push(countries[i].toUpperCase())
+}
+
+console.log(newCountry)
+console.log(highest );
+console.log(landCountry);
+console.log(twoWord);
