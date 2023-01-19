@@ -160,4 +160,59 @@ function findMax(arg1, arg2, arg3) {
 
 console.log(findMax(0, 10, 5))
 
-console.log(findMax(0, -10, -2))
+
+function printArray(arr) {
+    for (const obj of arr) {
+        console.log(obj);
+    }
+}
+
+printArray([1, 2, 3, 5])
+let time = new Date()
+
+function showDateTime() {
+    return `${time.getDate()}/${time.getMonth()+1}/${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`
+};
+
+console.log(showDateTime())
+
+function reverseArray(arr) {
+   let reverseOfArr = []
+   for (let i = arr.length -1; i >= 0; i--) {
+    const element = arr[i];
+    reverseOfArr.push(element)
+   }
+   return reverseOfArr
+}
+
+console.log(reverseArray([1, 2, 3, 4, 5]))
+//[5, 4, 3, 2, 1]
+console.log(reverseArray(['A', 'B', 'C']))
+//['C', 'B', 'A']
+
+function capitalizeArray(arr) {
+    let capitalizedArray = []
+    for (const obj of arr) {
+        capitalizedArray.push(obj.toUpperCase())
+    }
+    return capitalizedArray
+}
+console.log(capitalizeArray(['a', 's']))
+
+const arr = [];
+
+function addItem(item) {
+    arr.push(item)
+};
+addItem('buchi')
+addItem('eliza')
+addItem('chinedu')
+addItem('eliza')
+
+function removeItem(index) {
+    arr.splice(index-1, 1)
+};
+removeItem(2)
+
+
+console.log(arr);
