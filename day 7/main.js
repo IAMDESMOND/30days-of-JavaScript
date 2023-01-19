@@ -212,7 +212,111 @@ addItem('eliza')
 function removeItem(index) {
     arr.splice(index-1, 1)
 };
-removeItem(2)
-
+console.log(removeItem(2));
 
 console.log(arr);
+
+function sumOfNumbers(num) {
+    let sum = 0
+    for (let i = num; i > 0; i--) {
+        sum += i
+    }
+return sum
+}
+
+console.log(sumOfNumbers(4))
+
+function sumOfOdds(num) {
+  let sum = 0
+  for (let i = num; i > 0; i--) {
+    if (i % 2 !== 0) {
+        sum += i
+        console.log(i);
+    }
+  }
+return sum
+}
+
+console.log(sumOfOdds(7));
+
+
+function sumOfEvens(num) {
+    let sum = 0
+    for (let i = num; i > 0; i--) {
+      if (i % 2 == 0) {
+          sum += i
+          console.log(i);
+      }
+    }
+  return sum
+  }
+
+  console.log(sumOfEvens(7))
+
+  function evensAndOdds(num) {
+    if (num > -1) {
+        let numOfOdd = 0
+        let numOfEven = 0
+        for (let i = num; i > 0; i--) {
+          if (i % 2 !== 0) {
+              numOfOdd += 1
+          }else{
+              numOfEven += 1
+          }
+        }
+        return `The number of odds are ${numOfOdd}.\n
+        The number of evens are ${numOfEven}.`
+    } else {
+        return `Not a positive integer`
+    }
+  }
+  
+  console.log(evensAndOdds(100));
+
+  function sumOf() {
+    let sum = 0
+    for (let i = 0; i < arguments.length; i++) {
+        const element = arguments[i];
+        sum += element
+    }
+    return sum
+  }
+
+  console.log( sumOf(1, 2, 3, 4));
+ 
+function randomHexaNumberGenerator() {
+	const alpha = ["A","B","C","D","E","F"];
+	
+	 let id = Array(7)
+	 id[0] = '#'
+	
+	for (let i = 1; i < 7; i++) {
+	     let letter =  alpha[Math.floor(Math.random() * 6)].toLowerCase()
+	     let num = Math.floor(Math.random() * 10)
+	     let idCharacter = [letter, num]
+	
+	     id[i] = idCharacter[Math.floor(Math.random() * 2)]
+	 } 
+	
+	return id.join('');
+	
+}
+
+console.log(randomHexaNumberGenerator())
+
+const alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+function userIdGenerator() {
+	let id = Array()
+	
+	for (let i = 0; i < 6; i++) {
+	    let letter =  alpha[Math.floor(Math.random() * 26)].toLowerCase()
+	    let num = Math.floor(Math.random() * 10)
+	    let idCharacter = [letter, num]
+	
+	    id[i] = idCharacter[Math.floor(Math.random() * 2)]
+	} 
+	
+	console.log(id.join(''));
+	// not done with this man
+}
