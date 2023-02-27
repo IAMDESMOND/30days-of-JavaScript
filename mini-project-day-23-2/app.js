@@ -1,5 +1,6 @@
 const body = document.querySelector('body')
 const key = document.querySelector('.key-pressed')
+
 const display = document.querySelector('.number-display')
 
 body.style = `
